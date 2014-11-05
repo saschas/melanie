@@ -1,0 +1,40 @@
+.mfp-bg {
+background: #fff;
+opacity: .9;
+filter: alpha(opacity=80);
+}
+
+button.mfp-close {
+width: 50px;
+height: 50px;
+background: none;
+color: #222;
+text-align: center;
+border: none;
+}
+
+
+//Gallery Buttons
+button.mfp-arrow {
+border: none!important;
+background: #fff;
+
+	&::before{
+		
+	}
+}
+.mfp-arrow-right:after, .mfp-arrow-right .mfp-a,
+.mfp-arrow-left:after, .mfp-arrow-left .mfp-a{
+	content:none;
+}
+.mfp-arrow-right:before, .mfp-arrow-right .mfp-b{
+	border-left: 27px solid #222;
+}
+.mfp-arrow-left:before, .mfp-arrow-left .mfp-b{
+	border-right: 27px solid #222;
+}
+
+
+button.mfp-close {
+display: none;
+}

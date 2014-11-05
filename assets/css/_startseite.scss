@@ -1,0 +1,97 @@
+
+//Grid Startseite
+
+.home #site-main{
+	padding: 0 50px 25px 291px;
+}
+
+.home #site-breadcrumbs{
+	display:none;
+}
+
+.mwst{
+	color:#999;
+}
+
+.grid{
+	margin-bottom:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+.grid img{
+	width:100%;
+	height:auto;
+	
+}
+
+.grid.Produkt{
+	& .inner{
+		text-align: center;
+	}
+	& h2 {		
+		border-bottom: 1px solid #222;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+} 
+
+.grid{
+	height: 100%;
+	position:relative;
+	&:hover .inner_table .inner{
+			opacity:1;
+		}
+	& .inner_table{
+		position: absolute;
+		display:table;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		
+		& .inner{
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0 10%;
+			transition-duration:.25s;
+			background: rgba(255,255,255,0.8);
+			opacity:0;
+		}
+	}
+
+	& iframe{
+		margin-bottom:0;
+	}
+}
+
+
+.grid.Text {
+background: #eee;
+height:initial;
+
+	& .inner{
+		padding: 20px;
+		font-size: 1.5em;
+	}
+}
+
+.grid.quarter{
+	width:23%;
+}
+.grid.half{
+	width:48%;
+}
+
+.grid.third{
+	width:73%;
+}
+
+.grid.full{
+	width:98%;
+}
+
+
+

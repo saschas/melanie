@@ -1,0 +1,60 @@
+
+
+.post-type-archive-product,.tax-product_cat {
+
+
+
+	& .product-wrap {
+		transition-duration:0.25s;
+		position: absolute;
+		top: 0;
+		height: 102%;
+		display: block;
+		background: rgba(255, 255, 255, 0.9);
+		width: 101%;
+		display: table;
+		opacity:0;
+		& .inner {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	& article.product{
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			padding-bottom: 120%;
+		}
+
+		&:hover .product-wrap{
+		opacity:1;
+		}
+	}
+
+	& .site-product-inner {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+
+	& a.versandkosten{
+		display:inline;
+
+		&::before{
+			content:none;
+		}
+	}
+	& .add_to_cart_button{
+		&::before{
+			content:none;
+		}
+	}
+}
+}
+
+
+.site-product-meta .price ins .amount {
+	color: tomato;
+}

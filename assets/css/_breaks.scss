@@ -1,0 +1,144 @@
+
+@media screen and (max-width: 1024px){
+	.page.site-entry {
+		position: relative!important;
+	}
+	
+	.mobile-logo{
+		z-index: 9999;
+	}
+	.site-widget:nth-child(even) {
+		width: 40%;
+		float: right;
+		margin-bottom: 0;
+	}
+	.site-widget:nth-child(odd) {
+		width: 40%;
+		float: left;
+		margin-bottom: 0;
+	}
+	.home #site-main{
+		padding-left:260px;
+	}
+	#site-main{
+		padding-left:260px;
+	}
+	.grid.half {
+		width: 48%;
+	}
+	.grid.quarter{
+		width:48%;
+	}
+}
+
+	//logo
+	.mobile-logo {
+		width: 100%;
+		background: #fff;
+		position: absolute;
+		top: 40px;
+		padding: 20px 0;
+		display:none;
+			& img {
+				width: 50%;
+		height: auto;
+		max-width: 200px;
+		margin: auto;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 800px){
+	
+	.touch #site-meta{
+		position:fixed;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		line-height: 1.2;
+	}
+	#site{
+		padding-top: 4em;
+	}
+	#site-meta{
+		top:0!important;
+		z-index: 99999;
+	}
+
+	.mobile-logo{
+		display:block;
+		position: relative;
+	}
+	
+	#site-logo{
+		display:none;
+	}
+	#hellobar_container,#hellobar_pusher{
+		display:none;
+	}
+	#site-content-inner{
+		//height:initial!important;
+	}
+	
+	#site-breadcrumbs{
+		display: none;
+	}
+
+	.grid{
+		width:100%!important;
+	}
+	.site-sidebar-left-visible #site-sidebar-left, .site-sidebar-left-visible #site:before{
+		left:0;
+	}
+	.site-header-navigation-visible #site-header-navigation li{
+		padding-left:1em;
+		display: block;
+		line-height: 3.5em;
+		& a{
+			display: inline;
+		}
+	}
+	#site-main{
+		padding:0 1em;
+	}
+
+	div#site-content-inner > img {
+	max-width: 100%;
+	height: auto;
+	}
+	
+	.site-product-images-thumbnails a{
+		margin: 0;
+		width: 31.7%;
+		max-width: 88px;
+		& img{
+			margin:0;
+			padding:0;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.site-widget {
+		width: 80%!Important;
+		float: none!important;
+		margin-bottom: 2em!important;
+		margin: auto;
+	}
+
+	.menu-footer-menu-container{
+		height:initial;
+	}
+	#menu-footer-menu {
+	padding-left: 1em;
+	padding-right: 1em;
+
+		& li{
+			line-height: 2.3em;
+			text-align: center;
+			float:none;
+		}
+	}
+
+
+}
