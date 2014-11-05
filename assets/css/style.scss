@@ -169,8 +169,8 @@ margin-left: -15px;
 #site-header-navigation .menu-item a{
 	color:$mainColor;
 }
-header.site-entry-header.clearfix {
-margin-bottom: 0.4em;
+header.site-entry-header{
+margin-bottom: 1em;
 }
 /**SideBar**/
 
@@ -183,7 +183,13 @@ margin-bottom: 0.4em;
 	padding-top: 3.75em;
 }
 #site-content{
+	width:70%;
 	max-width:1280px;
+	float:left;
+}
+
+#site-main{
+	padding:0 50px 25px 291px
 }
 
 header.site-entry-header{
@@ -201,7 +207,6 @@ margin-bottom: 1em;
 //Die Höhe wird bei dieser Klasse automatisch berechnet
 #site-content-inner{
 	width:auto;
-	max-width:100%;
 }
 img.categoryImage {
 	max-width: 100%;
@@ -339,7 +344,9 @@ div[itemprop="description"] {
 
 
 @import 'startseite';
+@import 'thank_you';
 @import 'sidebar';
+@import 'sidebar-right';
 
 @import 'presse';
 @import 'shop';

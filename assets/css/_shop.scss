@@ -1,3 +1,8 @@
+.single-product #site-content{
+	width:100%;
+}
+
+
 .archive .site-product-inner{
 	position: relative;
 	height: 100%;
@@ -9,7 +14,7 @@
 .page .cross-sells .product, 
 .archive .product, 
 #woocommerce-related-products .product{
-width: 49.5%;
+width: 28%;
 float: left;
 background: #fff;
 padding: 0;
@@ -19,6 +24,17 @@ position: relative;
 height: auto;
 margin-right:1%;
 margin-top: 1%;
+}
+
+
+.single-product .upsells.products .product, 
+.page .cross-sells .product, 
+.single-product #woocommerce-related-products .product{
+	width:28%;
+}
+
+.archive .product{
+	width:49.5%
 }
 
 .archive article.product{

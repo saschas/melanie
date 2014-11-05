@@ -7,6 +7,21 @@
 	.mobile-logo{
 		z-index: 9999;
 	}
+
+	#site-content{
+		width:100%;
+	}
+	#site-sidebar-right{
+		width:100%;
+	}
+	
+	.site-widget{
+		width:50%;
+	}
+	#sb_instagram.sbi_col_3 #sbi_images .sbi_item {
+		width: 50%;
+	}
+	/*
 	.site-widget:nth-child(even) {
 		width: 40%;
 		float: right;
@@ -23,6 +38,7 @@
 	#site-main{
 		padding-left:260px;
 	}
+	*/
 	.grid.half {
 		width: 48%;
 	}
@@ -49,6 +65,9 @@
 }
 
 @media screen and (max-width: 800px){
+	.home #site-main{
+		padding:0 10px 25px 10px
+	}
 	
 	.touch #site-meta{
 		position:fixed;
@@ -139,6 +158,18 @@
 			float:none;
 		}
 	}
+	
+	#sb_instagram #sbi_images{
+		padding:0!important;
+		padding-bottom:10px!important;
+	}
 
+	#sb_instagram.sbi_col_3 #sbi_images .sbi_item{
+		width:100%;
+
+		& img{
+			min-width: 100%;
+		}
+	}
 
 }
